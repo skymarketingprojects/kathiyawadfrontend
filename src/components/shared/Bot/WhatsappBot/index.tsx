@@ -1,6 +1,6 @@
 import styles from "./WhatsappBot.module.css"
-import { STATIC_ICONS } from "../../../../utils/constants/image";
 import { CONTACTS } from "../../../../utils/constants/contact";
+import { STATIC_ICONS } from "../../../../utils/constants/image";
 const WhatsappBot = () => {
     const handleClick = () => {
         window.open(`https://wa.me/+91${CONTACTS.PHONE1}`);
