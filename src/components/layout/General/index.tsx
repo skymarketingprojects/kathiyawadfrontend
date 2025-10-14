@@ -1,5 +1,6 @@
 import Header from "../../shared/Header";
 import Footer from "../../shared/Footer";
+import Bots from "../../shared/CTA/Bots";
 
 const GeneralLayout = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -7,6 +8,7 @@ const GeneralLayout = ({ children }: { children: React.ReactNode }) => {
             <Header />
             <main>{children}</main>
             <Footer />
+            <Bots />
         </div>
     );
 };
