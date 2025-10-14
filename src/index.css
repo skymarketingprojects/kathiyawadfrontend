@@ -131,6 +131,7 @@ button {
   --color-bg-section-dark: #fefefe;
   --color-bg-black: #131313;
   --color-bg-black-section: #343434;
+  --color-bg-chip: #f9de37;
   --color-success-bg: #4caf50;
   --color-warning-bg: #ff9800;
   --color-error-bg: #ff0015;
@@ -251,6 +252,7 @@ button {
   /* Background Colors */
   --bg-theme-dark: var(--color-brand-dark);
   --bg-theme-color: var(--color-brand-primary);
+  --bg-chip-clor: var(--color-bg-chip);
   --bg-primary-color: var(--color-bg-primary);
   --bg-section-color: var(--color-bg-section);
   --bg-section-color-dark: var(--color-bg-section-dark);

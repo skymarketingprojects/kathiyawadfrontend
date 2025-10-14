@@ -1,0 +1,24 @@
+.container {
+  display: block;
+  text-align: center;
+  padding: var(--padding-xs) 0;
+  background-color: var(--color-bg-chip);
+}
+
+.text {
+  overflow: auto;
+  max-width: 100%;
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: var(--font-size-h6);
+  color: var(--text-theme-color);
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: var(--padding-lg) 0;
+  }
+  .text {
+    padding: 0 var(--padding-xxs);
+  }
+}
