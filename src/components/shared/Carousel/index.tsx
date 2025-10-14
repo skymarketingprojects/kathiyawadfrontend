@@ -1,7 +1,7 @@
 import styles from "./Carousel.module.css";
 import {
-    RightSwitch,
     LeftSwitch,
+    RightSwitch,
 } from "../../ui/Icons";
 import React, { useEffect, useRef, useState, } from "react";
 

@@ -147,6 +147,7 @@ button {
   --color-text-black: #0e0e0e;
   --color-text-link: #000099;
   --color-text-highlight: #ffa500;
+  --color-text-cta: #ffa500;
 
   /* Border Colors   */
   --color-border-primary: #6e6e6e;
@@ -276,6 +277,7 @@ button {
   --text-link-color: var(--color-text-link);
   --text-highlight-color: var(--color-text-highlight);
   --text-red-color: var(--color-text-red);
+  --text-cta-color: var(--color-text-cta);
   /* Border Colors */
   --border-dark-color: var(--color-border-dark);
   --border-light-color: var(--color-border-light);
