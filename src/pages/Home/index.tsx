@@ -1,8 +1,11 @@
+import styles from "./Home.module.css"
 import { Hero } from "../../components/home";
 import ProductContainer from "../../components/product/ProductContainer";
 import SectionHeading from "../../components/shared/SectionHeading";
 import { products } from "../../utils/data/products";
+import useHomePage from "./useHomePage";
 const Home = () => {
+    const { bannerImage } = useHomePage();
     return (
         <div>
             <Hero />
@@ -12,6 +15,10 @@ const Home = () => {
             />
             <ProductContainer
                 products={products}
+            />
+            <img
+                src={bannerImage}
+                className={styles.bannerImage}
             />
         </div>
     )
