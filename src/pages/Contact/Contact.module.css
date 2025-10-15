@@ -4,7 +4,7 @@
 }
 .mayAlsoLike {
   line-height: 1em;
-  font-weight: 700;
+  font-weight: 400;
   font-size: var(--font-size-h1);
   color: var(--text-theme-color);
 }
@@ -17,7 +17,7 @@
   max-width: calc(var(--max-width-container) / 2.5);
 }
 .heading {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.3em;
   line-height: 1.1em;
   color: var(--text-theme-color);

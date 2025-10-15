@@ -99,7 +99,7 @@
   border-top: 1px solid var(--text-white-color);
 }
 .bottomCta {
-  font-weight: 700;
+  font-weight: 400;
   color: var(--text-cta-color);
   font-size: var(--font-size-h6);
 }

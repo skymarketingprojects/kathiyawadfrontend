@@ -8,7 +8,7 @@
 .text {
   overflow: auto;
   max-width: 100%;
-  font-weight: 700;
+  font-weight: 400;
   white-space: nowrap;
   font-size: var(--font-size-h6);
   color: var(--text-theme-color);
