@@ -1,0 +1,23 @@
+/* TabComponent.module.css */
+
+.tabsContainer {
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab {
+  font-size: var(--font-size-h4);
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.activeTab {
+  color: var(--text-theme-color);
+  font-weight: bold;
+}
+.tabContent {
+  padding: 10px;
+  border-top: 1px solid var(--border-light-color);
+}

@@ -7,6 +7,12 @@ export interface ProductCardType {
   link?: string;
 }
 
+export interface ProductTabType {
+  id: number;
+  label: string;
+  value: string;
+  content: string;
+}
 export interface ProductDetail extends ProductCardType {
   id: number;
   image: string;
@@ -14,4 +20,5 @@ export interface ProductDetail extends ProductCardType {
   description: string;
   price?: number;
   link?: string;
+  tabs: ProductTabType[];
 }

@@ -1,5 +1,5 @@
 .container {
-  margin: calc(2 * var(--margin-xxl)) auto;
+  margin: calc(2 * var(--margin-xxl));
   max-width: calc(var(--max-width-container) / 1.4);
 }
 
