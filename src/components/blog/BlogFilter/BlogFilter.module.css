@@ -1,0 +1,43 @@
+.sidebar {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  height: fit-content;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchSection,
+.categoriesSection {
+  margin-bottom: 20px;
+}
+
+.searchLabel {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.categoriesTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.categoryItem {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.categoryCount {
+  color: #888;
+}

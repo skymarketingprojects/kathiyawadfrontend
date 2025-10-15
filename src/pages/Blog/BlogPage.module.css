@@ -27,3 +27,6 @@
   font-size: 0.5em;
   line-height: 1.3em;
 }
+.blogsContainer {
+  display: flex;
+}
