@@ -22,3 +22,10 @@ export interface ProductDetail extends ProductCardType {
   link?: string;
   tabs: ProductTabType[];
 }
+
+export interface BlogCardType {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+}

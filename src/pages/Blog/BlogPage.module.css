@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  gap: var(--gap-xl);
+}
+.mayAlsoLike {
+  line-height: 1em;
+  font-weight: 700;
+  font-size: var(--font-size-h1);
+  color: var(--text-theme-color);
+}
+
+.headingContainer {
+  display: grid;
+  place-items: center;
+  padding: calc(1.5 * var(--padding-xxl)) 0;
+  font-size: var(--font-size-h1);
+  max-width: calc(var(--max-width-container) / 2.5);
+}
+.heading {
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 1.1em;
+  color: var(--text-theme-color);
+}
+.subHeading {
+  text-align: center;
+  font-size: 0.5em;
+  line-height: 1.3em;
+}
