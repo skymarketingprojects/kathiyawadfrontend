@@ -8,7 +8,7 @@ import BulkOrder from "../../components/shared/CTA/BulkOrder";
 const Home = () => {
     const { bannerImage } = useHomePage();
     return (
-        <div>
+        <div className={styles.container}>
             <Hero />
             <SectionHeading
                 heading="Our Top Categories!"

@@ -1,11 +1,17 @@
-﻿import styles from "./Product.module.css"
-import useProductPage from "./useProductPage"
+﻿import Hero from "../../components/product/Hero"
+import SectionHeading from "../../components/shared/SectionHeading"
+// import styles from "./Product.module.css"
+// import useProductPage from "./useProductPage"
 
 const Product = () => {
-    const { title } = useProductPage()
+
     return (
-        <div className={styles.mainContainer}>
-            <h1>{title}</h1>
+        <div >
+            <Hero />
+            <SectionHeading
+                heading="Our Handcrafted Delights!"
+                subHeading="त्योहार का एहसास हर बीतते पल में"
+            />
         </div>
     )
 }

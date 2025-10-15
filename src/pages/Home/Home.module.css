@@ -1,3 +1,7 @@
+.container {
+  display: grid;
+  gap: var(--gap-xl);
+}
 .bannerImage {
   width: 100%;
   aspect-ratio: 3/1;

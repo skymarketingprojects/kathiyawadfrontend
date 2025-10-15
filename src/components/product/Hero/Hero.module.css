@@ -1,0 +1,9 @@
+.heroImage {
+  width: 100%;
+  aspect-ratio: 3.5 / 1;
+}
+@media (max-width: 768px) {
+  .heroImage {
+    aspect-ratio: 3/ 1;
+  }
+}
