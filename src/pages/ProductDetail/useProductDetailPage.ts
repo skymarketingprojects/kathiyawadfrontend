@@ -1,4 +1,5 @@
 ﻿import type { ProductTabType } from "../../types/content";
+import { products } from "../../utils/data/products";
 
 const useProductDetailPage = () => {
   const title = "ProductDetail";
@@ -25,7 +26,8 @@ const useProductDetailPage = () => {
         "<p><strong>Shipping Information:</strong> We offer various shipping options...</p>",
     },
   ];
-  return { title, productTabs };
+  const relatedProducts = products;
+  return { title, productTabs, relatedProducts };
 };
 
 export default useProductDetailPage;
