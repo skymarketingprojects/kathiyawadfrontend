@@ -38,7 +38,10 @@ const Contact = () => {
                         </p>
                     </div>
                 </div>
-                <ContactForm />
+                <div className={`${styles.formSection}`}>
+
+                    <ContactForm />
+                </div>
             </section>
             <div className={`container ${styles.headingContainer}`}>
                 <h1 className={styles.heading}>{"Book a bulk Order"}</h1>

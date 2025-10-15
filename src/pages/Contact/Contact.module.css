@@ -29,4 +29,24 @@
 }
 .contactSection {
   display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formSection {
+}
+.contactContainer {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.header {
+  font-size: var(--font-size-h4);
+  color: var(--text-theme-color);
+}
+
+.subHeader {
+  font-size: var(--font-size-h5);
 }

@@ -4,21 +4,17 @@
   border-radius: 10px;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
-  font-family: "Arial", sans-serif;
-  color: #9b1c2e;
-  text-align: center;
-  margin-bottom: 20px;
   font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--text-theme-color);
 }
 
 .label {
   display: block;
-  margin-bottom: 8px;
   font-weight: bold;
   color: #333;
 }
@@ -28,11 +24,11 @@
 select {
   width: 100%;
   padding: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
   box-sizing: border-box;
+  border: 1px solid var(--border-light-color);
 }
 
 .textarea {
@@ -40,8 +36,8 @@ select {
 }
 
 .submitButton {
-  background-color: #9b1c2e;
-  color: white;
+  background-color: var(--bg-theme-color);
+  color: var(--text-white-color);
   border: none;
   padding: 12px 20px;
   width: 100%;
