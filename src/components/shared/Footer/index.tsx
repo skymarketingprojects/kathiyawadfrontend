@@ -1,12 +1,11 @@
 ﻿import styles from "./Footer.module.css"
-import useFooterPage from "./useFooterPage"
 import { Link } from "react-router-dom";
-import { CONTACTS, SOCIAL_MEDIA } from "../../../utils/constants/contact";
+// import { CONTACTS, SOCIAL_MEDIA } from "../../../utils/constants/contact";
 import { STATIC_IMAGES } from "../../../utils/constants/image";
 import { PAGES } from "../../../utils/constants";
 
 const Footer = () => {
-    const { title } = useFooterPage()
+
     return (
         <footer className={`${styles.footerWrapper}`}>
             <div className={`${styles.footerContainer}`}>

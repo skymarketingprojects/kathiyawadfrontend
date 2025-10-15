@@ -1,0 +1,17 @@
+.headingContainer {
+  display: grid;
+  place-items: center;
+  padding: var(--padding-xxl) 0;
+  font-size: var(--font-size-h1);
+  max-width: calc(var(--max-width-container) / 2);
+}
+.heading {
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 1.1em;
+  color: var(--text-theme-color);
+}
+.subHeading {
+  font-size: 0.7em;
+  line-height: 1.3em;
+}
