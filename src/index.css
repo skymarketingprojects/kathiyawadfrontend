@@ -130,6 +130,7 @@ button {
   --color-bg-section: #ffffff;
   --color-bg-section-dark: #fefefe;
   --color-bg-black: #131313;
+  --color-bg-cta: #f9de37;
   --color-bg-black-section: #343434;
   --color-bg-chip: #f9de37;
   --color-success-bg: #4caf50;
@@ -258,6 +259,7 @@ button {
   --bg-section-color: var(--color-bg-section);
   --bg-section-color-dark: var(--color-bg-section-dark);
   --bg-black-color: var(--color-bg-black);
+  --bg-cta-color: var(--color-bg-cta);
   --bg-black-section-color: var(--color-bg-black-section);
   --bg-success-color: var(--color-success-bg);
   --bg-warning-color: var(--color-warning-bg);
@@ -278,6 +280,7 @@ button {
   --text-highlight-color: var(--color-text-highlight);
   --text-red-color: var(--color-text-red);
   --text-cta-color: var(--color-text-cta);
+
   /* Border Colors */
   --border-dark-color: var(--color-border-dark);
   --border-light-color: var(--color-border-light);

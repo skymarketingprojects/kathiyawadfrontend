@@ -1,0 +1,6 @@
+.productContainer {
+  display: grid;
+  gap: var(--gap-lg);
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: var(--margin-lg);
+}
