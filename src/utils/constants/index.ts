@@ -3,7 +3,7 @@
 export const PAGES = {
   HOME: "/",
   PRODUCT: "/product",
-  PRODUCT_DETAIL: "/prodct/:slug",
+  PRODUCT_DETAIL: "/product/:slug",
   BLOG: "/blog",
   BLOG_DETAIL: "/blog/:slug",
   CONTACT: "/contact",

@@ -1,11 +1,12 @@
-﻿import styles from "./ProductDetail.module.css"
-import useProductDetailPage from "./useProductDetailPage"
+﻿import ProductDetailHero from "../../components/product/ProductDetailHero"
+import styles from "./ProductDetail.module.css"
+// import useProductDetailPage from "./useProductDetailPage"
 
 const ProductDetail = () => {
-    const { title } = useProductDetailPage()
+    // const { title } = useProductDetailPage()
     return (
-        <div className={styles.mainContainer}>
-            <h1>{title}</h1>
+        <div className={styles.container}>
+            <ProductDetailHero />
         </div>
     )
 }
