@@ -4,6 +4,7 @@ import ProductContainer from "../../components/product/ProductContainer";
 import SectionHeading from "../../components/shared/SectionHeading";
 import { products } from "../../utils/data/products";
 import useHomePage from "./useHomePage";
+import BulkOrder from "../../components/shared/CTA/BulkOrder";
 const Home = () => {
     const { bannerImage } = useHomePage();
     return (
@@ -20,6 +21,7 @@ const Home = () => {
                 src={bannerImage}
                 className={styles.bannerImage}
             />
+            <BulkOrder />
         </div>
     )
 }
