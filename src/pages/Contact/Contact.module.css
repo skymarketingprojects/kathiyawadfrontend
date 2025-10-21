@@ -1,5 +1,6 @@
 .container {
   display: grid;
+  padding: var(--padding-lg);
   gap: var(--gap-xl);
 }
 .mayAlsoLike {
@@ -17,6 +18,7 @@
   max-width: calc(var(--max-width-container) / 2.5);
 }
 .heading {
+  text-align: center;
   font-weight: 400;
   font-size: 1.3em;
   line-height: 1.1em;
@@ -49,4 +51,12 @@
 
 .subHeader {
   font-size: var(--font-size-h5);
+}
+@media (max-width: 768px) {
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
