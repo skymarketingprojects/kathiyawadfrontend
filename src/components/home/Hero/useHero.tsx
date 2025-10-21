@@ -5,7 +5,7 @@
 import { useState } from "react";
 
 // import type { HomeCarouselType } from "../../../types/global";
-const useHero = () => {
+const useHero = (pageType: "home" | "product") => {
     // const [hero, setHero] = useState({
     //     line1: "Ab Leads Milegy Pakki",
     //     line2: "Flat 25% off on Packages",

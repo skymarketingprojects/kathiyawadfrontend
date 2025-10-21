@@ -9,7 +9,7 @@ const Home = () => {
     const { bannerImage } = useHomePage();
     return (
         <div className={styles.container}>
-            <Hero />
+            <Hero pageType="home" />
             <SectionHeading
                 heading="Our Top Categories!"
                 subHeading="त्योहार का एहसास हर बीतते पल में"

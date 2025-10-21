@@ -14,8 +14,8 @@ import useHero from "./useHero";
 //     backgroundImage: string;
 // }
 
-const Hero = () => {
-    const { heroImages } = useHero();
+const Hero = ({ pageType }: { pageType: "home" | "product" }) => {
+    const { heroImages } = useHero(pageType);
     // const width = useWindowWidth();
     // if (loading) {
     //     return <CarouselShimmer />

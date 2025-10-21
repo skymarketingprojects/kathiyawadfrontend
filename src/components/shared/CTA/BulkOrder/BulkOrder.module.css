@@ -54,3 +54,13 @@
   background-color: #fb4d4e;
   color: var(--text-white-color);
 }
+
+@media (max-width: 576px) {
+  .tags {
+    flex-direction: column;
+  }
+  .tag {
+    margin: auto;
+    width: fit-content;
+  }
+}
