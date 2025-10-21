@@ -1,7 +1,13 @@
-﻿import type { ProductTabType } from "../../types/content";
+﻿import { useEffect, useState } from "react";
+import type { ProductTabType, ProductDetail } from "../../types/content";
 import { products } from "../../utils/data/products";
+import { logger } from "../../utils/logger";
+import { ProductService } from "../../api/modules/product";
+import { getIdFromSlug } from "../../utils/helper/slug";
 
-const useProductDetailPage = () => {
+const useProductDetailPage = (slug: string | undefined) => {
+  const id = getIdFromSlug(slug!);
+
   const title = "ProductDetail";
   const productTabs: ProductTabType[] = [
     {
@@ -26,8 +32,28 @@ const useProductDetailPage = () => {
         "<p><strong>Shipping Information:</strong> We offer various shipping options...</p>",
     },
   ];
+  const [loading, setLoading] = useState(true);
+  const [product, setProduct] = useState<ProductDetail>({} as ProductDetail);
+  const fetchProductDetail = async () => {
+    try {
+      setLoading(true);
+      const res = await ProductService.fetchProductDetail(id);
+      if (!res.response) {
+        return;
+      }
+      setProduct(res.data);
+    } catch (e) {
+      logger.error("Erro while fetching product detail: ", e);
+    } finally {
+      setLoading(false);
+    }
+  };
+  useEffect(() => {
+    if (!id) return;
+    fetchProductDetail();
+  }, [id]);
   const relatedProducts = products;
-  return { title, productTabs, relatedProducts };
+  return { title, productTabs, relatedProducts, product, loading };
 };
 
 export default useProductDetailPage;

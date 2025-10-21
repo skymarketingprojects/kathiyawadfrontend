@@ -6,7 +6,7 @@ import SectionHeading from "../../components/shared/SectionHeading";
 import useHomePage from "./useHomePage";
 import BulkOrder from "../../components/shared/CTA/BulkOrder";
 const Home = () => {
-    const { bannerImage, products } = useHomePage();
+    const { bannerImage, products, loading } = useHomePage();
     return (
         <div className={styles.container}>
             <Hero pageType="home" />
@@ -14,9 +14,9 @@ const Home = () => {
                 heading="Our Top Categories!"
                 subHeading="त्योहार का एहसास हर बीतते पल में"
             />
-            <ProductContainer
+            {loading ? <div className="container">loading</div> : <ProductContainer
                 products={products}
-            />
+            />}
             <img
                 src={bannerImage}
                 className={styles.bannerImage}

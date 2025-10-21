@@ -3,6 +3,8 @@ import apiService from "../../apiService";
 import type {
   ProductListRes,
   ApiResponseType,
+  AllProductListRes,
+  ProductDetailRes,
 } from "../../../types/reqResTypes";
 
 export class ProductService {
@@ -13,8 +15,14 @@ export class ProductService {
     return response;
   }
   static async fetchAllProducts() {
-    const url = `${appUrl.product}/home/`;
-    const response: ApiResponseType<ProductListRes> =
+    const url = `${appUrl.product}/`;
+    const response: ApiResponseType<AllProductListRes> =
+      await apiService.getGetApiResponse(url);
+    return response;
+  }
+  static async fetchProductDetail(id: number) {
+    const url = `${appUrl.product}/${id}/`;
+    const response: ApiResponseType<ProductDetailRes> =
       await apiService.getGetApiResponse(url);
     return response;
   }

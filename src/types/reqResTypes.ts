@@ -3,6 +3,7 @@ import type {
   BlogDetail,
   HeroImage,
   ProductCardType,
+  ProductDetail,
 } from "./content";
 
 export interface ApiResponseType<T> {
@@ -33,3 +34,9 @@ export type BlogDetailRes = BlogDetail;
 export type HeroImagesRes = HeroImage[];
 
 export type ProductListRes = ProductCardType[];
+export type ProductDetailRes = ProductDetail;
+export interface AllProductListRes {
+  items: ProductCardType[];
+  totalPages: number;
+  currentPage: number;
+}

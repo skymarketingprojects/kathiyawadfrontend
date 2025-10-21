@@ -14,7 +14,7 @@ const useProductFilterPage = () => {
       if (!res.response) {
         return;
       }
-      setProducts(res.data);
+      setProducts(res.data.items);
     } catch (e) {
       logger.error("Error while fetching home products: ", e);
     } finally {

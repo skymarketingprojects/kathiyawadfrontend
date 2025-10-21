@@ -1,29 +1,30 @@
 ﻿import styles from "./ProductDetailHero.module.css";
-import { STATIC_IMAGES } from "../../../utils/constants/image";
 import useProductDetailHeroPage from "./useProductDetailHeroPage";
+import type { ProductDetail } from "../../../types/content";
 
-const ProductDetailHero = () => {
+const ProductDetailHero = ({ product }: { product: ProductDetail }) => {
     const { noOfItems, increment, decrement } = useProductDetailHeroPage()
+    const { title, price, metaDescription, imageUrl } = product;
     return (
         <div className={`container`}>
             <div className={styles.container}>
                 <div className={styles.productDetail}>
                     {/* Product Image and Description */}
                     <div className={styles.productImage}>
-                        <img src={STATIC_IMAGES.PRODUCTVER} alt="Peanut Chikki" />
+                        <img src={imageUrl} alt={title} />
                     </div>
                     <div className={styles.productInfo}>
-                        <h1 className={styles.productName}>Peanut Chikki</h1>
+                        <h1 className={styles.productName}>{title}</h1>
                         <div className={styles.rating}>
                             <span className={styles.stars}>★★★★★</span>
                             <span className={styles.ratingValue}>4.5/5.0</span>
                         </div>
                         <div className={styles.priceSection}>
-                            <span className={styles.price}>₹799/-</span>
-                            <span className={styles.oldPrice}>₹950/-</span>
+                            <span className={styles.price}>₹{price}/-</span>
+                            {/* <span className={styles.oldPrice}>₹{price}/-</span> */}
                         </div>
                         <p className={styles.productDescription}>
-                            A luxurious, energy-packed treat made from a blend of premium dates, cashews, almonds, and pistachios, bound with organic jaggery. Perfect for a healthy snack or gifting. <strong>**No refined sugar, no preservatives.**</strong>
+                            {metaDescription}
                         </p>
 
                         {/* Quantity and Cart/Buy Buttons */}
