@@ -13,28 +13,28 @@
 .heading {
   font-size: 36px;
   font-weight: 400;
-  color: var(--text-theme-color);
   line-height: 1em;
+  color: var(--text-theme-color);
 }
 
 .subheading {
-  color: var(--text-dark-color);
   font-size: 18px;
+  color: var(--text-dark-color);
 }
 
 .tags {
+  gap: 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
 }
 
 .tag {
-  background-color: var(--bg-cta-color);
-  color: var(--text-theme-color);
-  padding: 8px 16px;
-  border-radius: 30px;
   font-size: 16px;
   font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: var(--text-theme-color);
+  background-color: var(--bg-cta-color);
 }
 
 .description {
@@ -45,8 +45,8 @@
 .button {
   border: none;
   margin: auto;
-  cursor: pointer;
   font-size: 20px;
+  cursor: pointer;
   font-weight: 400;
   padding: 10px 30px;
   width: fit-content;
