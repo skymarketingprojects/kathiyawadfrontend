@@ -2,8 +2,8 @@
 
 .tabsContainer {
   display: flex;
-  cursor: pointer;
   padding: 10px;
+  cursor: pointer;
 }
 
 .tab {
@@ -20,4 +20,15 @@
 .tabContent {
   padding: 10px;
   border-top: 1px solid var(--border-light-color);
+}
+
+@media (max-width: 768px) {
+  .tabsContainer {
+    padding: 5px;
+  }
+  .tab {
+    margin-right: 0;
+    font-size: var(--font-size-h5);
+    padding: 10px 10px;
+  }
 }

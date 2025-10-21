@@ -125,3 +125,15 @@
   background-color: var(--bg-theme-color);
   padding: var(--padding-md) calc(2 * var(--padding-xxl));
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: var(--margin-xxl);
+  }
+  .productDetail {
+    grid-template-columns: 1fr;
+  }
+  .productImage {
+    margin: auto;
+  }
+}
