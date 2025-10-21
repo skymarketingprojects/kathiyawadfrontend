@@ -30,6 +30,7 @@ export interface BlogCardType {
   description: string;
 }
 
+export type PageTtype = "home" | "product";
 export interface HeroImage {
   id: number;
   index: number;

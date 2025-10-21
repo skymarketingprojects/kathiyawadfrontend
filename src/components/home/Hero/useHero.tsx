@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { logger } from "../../../utils/logger";
-import type { HeroImage } from "../../../types/content";
+import type { HeroImage, PageTtype } from "../../../types/content";
 import { StockService } from "../../../api/modules/stock";
 
 // import type { HomeCarouselType } from "../../../types/global";
-const useHero = (pageType: "home" | "product") => {
+const useHero = (pageType: PageTtype) => {
 
     const [loading, setLoading] = useState(true);
     const [heroImages,

@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import Carousel from "../../shared/Carousel";
 import { WIDTH } from "../../../utils/constants";
 import useWindowWidth from "../../../hooks/width/useWindowWidth";
+import type { PageTtype } from "../../../types/content";
 
 
-const Hero = ({ pageType }: { pageType: "home" | "product" }) => {
+const Hero = ({ pageType }: { pageType: PageTtype }) => {
     const { loading, heroImages } = useHero(pageType);
     const width = useWindowWidth();
     if (loading) {
