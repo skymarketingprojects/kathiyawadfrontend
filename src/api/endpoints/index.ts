@@ -3,6 +3,6 @@ export class AppUrl {
   static readonly blog = "v1/blog";
   static readonly profile = "v1/profile";
 }
-const appUrl = new AppUrl();
+// const appUrl = new AppUrl();
 
-export default appUrl;
+export default AppUrl;

@@ -1,10 +1,12 @@
 import useBlogPage from "./useBlogPage";
 import styles from "./BlogPage.module.css";
+import BlogFilter from "../../components/blog/BlogFilter";
 import BulkOrder from "../../components/shared/CTA/BulkOrder";
 import BlogContainer from "../../components/blog/BlogContainer";
-import BlogFilter from "../../components/blog/BlogFilter";
 const BlogPage = () => {
-    const { blogs, } = useBlogPage()
+    const {
+        blogss,
+    } = useBlogPage()
     return (
         <div className={styles.container}>
 
@@ -14,8 +16,9 @@ const BlogPage = () => {
                 }
                 </p>
             </div>
-            <div className={` container ${styles.blogsContainer}`}>
-                <BlogContainer blogs={blogs} />
+            <div className={`container ${styles.blogsContainer}`}>
+                <BlogContainer blogs={blogss}
+                />
                 <BlogFilter />
             </div>
             <BulkOrder />

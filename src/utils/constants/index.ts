@@ -15,3 +15,8 @@ export const WIDTH = {
   LAPTOP: 1200,
   DESKTOP: 1600,
 };
+export const AUTH_VARS = {
+  ACCESS: "access_token",
+  REFRESH: "refresh_token",
+  SESSION: "sessionKey",
+};
