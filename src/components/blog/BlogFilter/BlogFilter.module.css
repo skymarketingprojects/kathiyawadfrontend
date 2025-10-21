@@ -42,7 +42,7 @@
   color: #888;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .sidebar {
     display: none;
   }

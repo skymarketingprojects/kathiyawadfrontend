@@ -20,6 +20,7 @@
   font-weight: 400;
   font-size: 1.3em;
   line-height: 1.1em;
+  text-align: center;
   color: var(--text-theme-color);
 }
 .subHeading {
@@ -28,5 +29,6 @@
   line-height: 1.3em;
 }
 .blogsContainer {
+  padding: var(--padding-lg);
   display: flex;
 }

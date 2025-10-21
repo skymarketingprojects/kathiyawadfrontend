@@ -4,14 +4,15 @@
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: var(--margin-lg);
   place-items: center;
+  padding: var(--padding-lg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .blogContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 676px) {
   .blogContainer {
     grid-template-columns: repeat(1, 1fr);
   }
