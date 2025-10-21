@@ -6,7 +6,7 @@ import SectionHeading from "../../components/shared/SectionHeading";
 import useHomePage from "./useHomePage";
 import BulkOrder from "../../components/shared/CTA/BulkOrder";
 const Home = () => {
-    const { bannerImage, productsTemp } = useHomePage();
+    const { bannerImage, products } = useHomePage();
     return (
         <div className={styles.container}>
             <Hero pageType="home" />
@@ -15,7 +15,7 @@ const Home = () => {
                 subHeading="त्योहार का एहसास हर बीतते पल में"
             />
             <ProductContainer
-                products={productsTemp}
+                products={products}
             />
             <img
                 src={bannerImage}

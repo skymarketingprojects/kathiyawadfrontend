@@ -11,9 +11,9 @@ const ProductDetailTabs = ({ productTabs }: { productTabs: ProductTabType[] }) =
                 {/* Tab Container */}
                 <div className={styles.tabsContainer}>
                     {/* Render tab buttons */}
-                    {tabs.map((tab) => (
+                    {tabs.map((tab, index) => (
                         <div
-                            key={tab.id}
+                            key={index}
                             onClick={() => handleTabClick(tab.value)}
                             className={`${styles.tab} ${activeTab === tab.value ? styles.activeTab : ""}`} // Apply active styles dynamically
                         >

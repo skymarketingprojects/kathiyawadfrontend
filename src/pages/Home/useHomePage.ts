@@ -23,7 +23,7 @@ const useHomePage = () => {
   };
   useEffect(() => {
     fetchHomeProducts();
-  });
+  }, []);
   return { loading, products, productsTemp, bannerImage };
 };
 

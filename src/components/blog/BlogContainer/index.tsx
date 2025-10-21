@@ -7,8 +7,8 @@ const BlogContainer = ({ blogs }: { blogs: BlogCardType[] }) => {
     // const { title } = useBlogContainerPage()
     return (
         <div className={`container ${styles.blogContainer}`}>
-            {blogs.map((blog) => (
-                <BlogCard key={blog.id} blog={blog} />
+            {blogs.map((blog, index) => (
+                <BlogCard key={index} blog={blog} />
             ))}
         </div>
     )

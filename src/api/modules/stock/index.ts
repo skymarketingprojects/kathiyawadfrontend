@@ -8,7 +8,7 @@ import type { PageTtype } from "../../../types/content";
 
 export class StockService {
   static async fetchHeroImage(pageType: PageTtype) {
-    const url = `${appUrl.stock}/hero/?page=${pageType}/`;
+    const url = `${appUrl.stock}/hero/?page=${pageType}`;
     const response: ApiResponseType<HeroImagesRes> =
       await apiService.getGetApiResponse(url);
     return response;

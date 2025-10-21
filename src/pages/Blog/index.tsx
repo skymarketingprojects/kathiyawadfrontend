@@ -5,11 +5,12 @@ import BulkOrder from "../../components/shared/CTA/BulkOrder";
 import BlogContainer from "../../components/blog/BlogContainer";
 const BlogPage = () => {
     const {
-        blogss,
+        blogs,
+        loading,
     } = useBlogPage()
+    if (loading) return <div>loading</div>
     return (
         <div className={styles.container}>
-
             <div className={`container ${styles.headingContainer}`}>
                 <h1 className={styles.heading}>{"Our Latest Articles"}</h1>
                 <p className={styles.subHeading}>{"Exploring the rich history,cultural significance, and art of the handcrafted treats"
@@ -17,7 +18,7 @@ const BlogPage = () => {
                 </p>
             </div>
             <div className={`container ${styles.blogsContainer}`}>
-                <BlogContainer blogs={blogss}
+                <BlogContainer blogs={blogs}
                 />
                 <BlogFilter />
             </div>

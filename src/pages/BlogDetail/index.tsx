@@ -7,7 +7,11 @@ import BlogFilter from "../../components/blog/BlogFilter"
 import BulkOrder from "../../components/shared/CTA/BulkOrder"
 const BlogDetail = () => {
     const { slug } = useParams();
-    const { blog } = useBlogDetailPage(slug)
+    const { blog, loading } = useBlogDetailPage(slug)
+    if (loading) return <div>loading</div>
+
+    if (!blog.title) return <div>no blog</div>
+
     return (
         <div className={styles.container}>
             <div className={`container ${styles.headingContainer}`}>
@@ -19,7 +23,7 @@ const BlogDetail = () => {
             <div className={`container ${styles.breadscrum}`}>
                 <span className={`${styles.text}`}>Blog</span>
                 <GreaterThan className={styles.icon} />
-                <span className={`${styles.text} ${styles.title}`}>{blog.title}</span>
+                <span className={`${styles.text} ${styles.title}`}>{blog?.title}</span>
             </div>
             <div className={`container flex gap-5`}>
                 <div className={`${styles.blogContainer}`}>

@@ -6,7 +6,7 @@ const ProductContainer = ({ products }: { products: ProductCardType[] }) => {
 
     return (
         <div className={`container  ${styles.productContainer}`}>
-            {products.map((product) => (<ProductCard key={product.id} product={product} />))}
+            {products.map((product, index) => (<ProductCard key={index} product={product} />))}
         </div>
     )
 }

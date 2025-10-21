@@ -68,7 +68,7 @@ const useBlogPage = () => {
       if (!res.response) {
         return;
       }
-      setBlogs(res.data.blogs);
+      setBlogs(res.data.items);
       setTotalPages(res.data.totalPages);
       setCurrentPage(res.data.currentPage);
       setHasNext(() => res.data.currentPage < res.data.totalPages);

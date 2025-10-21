@@ -21,7 +21,7 @@ const useProductPage = () => {
   };
   useEffect(() => {
     fetchHomeProducts();
-  });
+  }, []);
   return { loading, products };
 };
 

@@ -33,7 +33,9 @@ const useHero = (pageType: PageTtype) => {
     const fetchHeroImages = async () => {
         setLoading(true);
         try {
+
             const res = await StockService.fetchHeroImage(pageType);
+
             if (!res.response) {
                 return [];
             }
@@ -42,6 +44,7 @@ const useHero = (pageType: PageTtype) => {
             logger.error("Error while fetching hero imags: ", error);
         } finally {
             setLoading(false);
+            logger.log(" I am her")
         }
     };
     useEffect(() => {

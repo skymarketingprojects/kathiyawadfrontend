@@ -1,4 +1,9 @@
-import type { BlogCardType, HeroImage, ProductCardType } from "./content";
+import type {
+  BlogCardType,
+  BlogDetail,
+  HeroImage,
+  ProductCardType,
+} from "./content";
 
 export interface ApiResponseType<T> {
   data: T;
@@ -19,11 +24,12 @@ export interface RequestOptions {
 }
 
 export interface BlogListType {
-  blogs: BlogCardType[];
+  items: BlogCardType[];
   totalPages: number;
   currentPage: number;
 }
 
+export type BlogDetailRes = BlogDetail;
 export type HeroImagesRes = HeroImage[];
 
 export type ProductListRes = ProductCardType[];

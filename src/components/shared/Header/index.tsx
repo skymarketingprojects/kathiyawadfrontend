@@ -40,9 +40,9 @@ const Header = () => {
                 </NavLink>
             </div>
             <ul className={`${styles.headerLinksContainer} ${isOpen ? styles.open : ""}`}>
-                {links.map((link) => (
+                {links.map((link, index) => (
 
-                    <li key={link.label} className={`${styles.headerLink}`}>
+                    <li key={index} className={`${styles.headerLink}`}>
                         <NavLink
                             to={link.url}
                             onClick={closeMenu}

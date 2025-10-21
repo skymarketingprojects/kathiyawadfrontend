@@ -23,7 +23,7 @@ const useProductFilterPage = () => {
   };
   useEffect(() => {
     fetchHomeProducts();
-  });
+  }, []);
   return { loading, products, productsTemp, bannerImage };
 };
 
