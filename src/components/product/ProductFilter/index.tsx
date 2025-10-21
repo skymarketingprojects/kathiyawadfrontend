@@ -3,7 +3,7 @@ import styles from "./ProductFilter.module.css"
 import useProductFilterPage from "./useProductFilterPage"
 
 const ProductFilter = () => {
-    const { products, bannerImage } = useProductFilterPage()
+    const { productsTemp, bannerImage } = useProductFilterPage()
     return (
         <div className={`container`}>
             <div className={` ${styles.container}`}>
@@ -58,12 +58,12 @@ const ProductFilter = () => {
                         className={styles.bannerImage}
                     />
                     <div className={styles.productGrid}>
-                        {products.slice(0, 3).map((product) => (<ProductCard key={product.id} product={product} />))}
+                        {productsTemp.slice(0, 3).map((product) => (<ProductCard key={product.id} product={product} />))}
                     </div>
                 </div>
             </div>
             <div className={styles.productGrid}>
-                {products.slice(3,).map((product) => (<ProductCard key={product.id} product={product} />))}
+                {productsTemp.slice(3,).map((product) => (<ProductCard key={product.id} product={product} />))}
             </div>
         </div>
     )

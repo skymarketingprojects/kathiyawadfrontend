@@ -2,11 +2,11 @@ import styles from "./Home.module.css"
 import { Hero } from "../../components/home";
 import ProductContainer from "../../components/product/ProductContainer";
 import SectionHeading from "../../components/shared/SectionHeading";
-import { products } from "../../utils/data/products";
+
 import useHomePage from "./useHomePage";
 import BulkOrder from "../../components/shared/CTA/BulkOrder";
 const Home = () => {
-    const { bannerImage } = useHomePage();
+    const { bannerImage, productsTemp } = useHomePage();
     return (
         <div className={styles.container}>
             <Hero pageType="home" />
@@ -15,7 +15,7 @@ const Home = () => {
                 subHeading="त्योहार का एहसास हर बीतते पल में"
             />
             <ProductContainer
-                products={products}
+                products={productsTemp}
             />
             <img
                 src={bannerImage}

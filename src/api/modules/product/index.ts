@@ -1,11 +1,20 @@
 import appUrl from "../../endpoints";
 import apiService from "../../apiService";
-import type { ApiResponseType, BlogListType } from "../../../types/reqResTypes";
+import type {
+  ProductListRes,
+  ApiResponseType,
+} from "../../../types/reqResTypes";
 
 export class ProductService {
-  static async fetchBlogs() {
-    const url = `${appUrl.product}/signup/`;
-    const response: ApiResponseType<BlogListType> =
+  static async fetchHomeProducts() {
+    const url = `${appUrl.product}/home/`;
+    const response: ApiResponseType<ProductListRes> =
+      await apiService.getGetApiResponse(url);
+    return response;
+  }
+  static async fetchAllProducts() {
+    const url = `${appUrl.product}/home/`;
+    const response: ApiResponseType<ProductListRes> =
       await apiService.getGetApiResponse(url);
     return response;
   }
