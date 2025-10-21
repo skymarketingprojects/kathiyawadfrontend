@@ -15,11 +15,11 @@ export interface ProductTabType {
 }
 export interface ProductDetail extends ProductCardType {
   id: number;
-  image: string;
   name: string;
-  description: string;
-  price?: number;
   link?: string;
+  image: string;
+  price?: number;
+  description: string;
   tabs: ProductTabType[];
 }
 
@@ -28,4 +28,11 @@ export interface BlogCardType {
   image: string;
   title: string;
   description: string;
+}
+
+export interface HeroImage {
+  id: number;
+  index: number;
+  image: string;
+  link?: string;
 }
